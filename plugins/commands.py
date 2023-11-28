@@ -22,16 +22,13 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
-                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
-                ],[
-                    InlineKeyboardButton('❗️Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('🍁 Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='dash')
-                  ]]
+            InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('✧ sᴜᴘᴘᴏʀᴛ​ ✧', url='https://t.me/+4nzja42ELQwzOWVl'),
+            InlineKeyboardButton('✧ ᴜᴘᴅᴀᴛᴇs​ ✧', url='https://t.me/bot_channel_011')
+            ],[
+            InlineKeyboardButton('✘ ᴄʜᴇᴄᴋ ᴘᴍ ✘', url='https://t.me/bot_channel_011')
+        ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -52,16 +49,16 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
-                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
+                    InlineKeyboardButton(' ᴏᴡɴᴇʀ ✦', callback_data= "owner_info"),
+                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ ', callback_data='money_bot')
                 ],[
-                    InlineKeyboardButton('❗️Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('🍁 Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('💠 ʜᴇʟᴘ 💠', callback_data='help'),
+                    InlineKeyboardButton('✦ ᴀʙᴏᴜᴛ ✦', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='dash')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAICRmSq1NCa7IRTH_iz1PyxlTD_CG8aAAIEAAPBJDExieUdbguzyBAeBA") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEKHGxky7KcjIQZKW00_f3JOU_i-z8noQACGwkAAsadAVf2bhwaGUE-jB4E") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -103,15 +100,13 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
-                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
+                    InlineKeyboardButton(' ᴏᴡɴᴇʀ ✦', callback_data= "owner_info"),
+                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ ', callback_data='money_bot')
                 ],[
-                    InlineKeyboardButton('❗️Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('🍁 Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('💠 ʜᴇʟᴘ 💠', callback_data='help'),
+                    InlineKeyboardButton('✦ ᴀʙᴏᴜᴛ ✦', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='dash')
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -162,10 +157,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
-                       ],[
-                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
+                          InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/i_Movieee')        
                          ]
                         ]
                     )
@@ -181,10 +173,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
-                       ],[
-                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
+                          InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/i_Movieee')        
                          ]
                         ]
                     )
@@ -300,10 +289,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
-                   ],[
-                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
+                      InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/New_Moviee_hindi')     
                      ]
                     ]
                 )
@@ -354,14 +340,11 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
-           ],[
-              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
+               InlineKeyboardButton("❤️‍🔥 ᴍᴏᴠɪᴇs ❤️‍🔥", url='https://t.me/i_Movieee')     
              ]
             ]
         )
-    )
+   )
                     
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
