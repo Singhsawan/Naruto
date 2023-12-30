@@ -67,7 +67,7 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), False)
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/+EYPCnAJ4uUtmY2Nl")
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/Howto_openlink_0")
 VERIFY2_URL = environ.get('VERIFY2_URL', "omnifly.in.net")
 VERIFY2_API = environ.get('VERIFY2_API', "ec011feae18c3dc044fb939ac4c0b7cb4f91c417")
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omnifly.in.net')
