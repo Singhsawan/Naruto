@@ -9,7 +9,7 @@ bs4
 git+https://github.com/Joelkb/cinemagoer
 datetime
 pytz
-aiohttp
+aiohttp==3.8.1
 openai
 psutil
 PyPDF2
@@ -32,4 +32,3 @@ ytthumb
 dnspython==2.3.0
 Flask==2.2.2
 gunicorn==20.1.0
-aiohttp==3.8.1
