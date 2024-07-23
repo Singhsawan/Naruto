@@ -61,15 +61,15 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001977832240').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '0').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/Howto_openlink_0")
-VERIFY2_URL = environ.get('VERIFY2_URL', "urlpro.site")
-VERIFY2_API = environ.get('VERIFY2_API', "4e015d2ecb1796cf288d1b6ced81fa01ae120ee6")
+VERIFY2_URL = environ.get('VERIFY2_URL', "ziplinker.net")
+VERIFY2_API = environ.get('VERIFY2_API', "b2488d7cb39a3bda4f66123a3f67cb773af054fb")
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'urlpro.site')
 SHORTLINK_API = environ.get('SHORTLINK_API', '4e015d2ecb1796cf288d1b6ced81fa01ae120ee6')
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')),True)
@@ -77,10 +77,10 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+4nzja42ELQwzOWVl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/i_Movieee')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+SULp-Vs1vlljM2Rl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/bot_channel_011')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001843498488))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'i_Movieee')
 S_GROUP = environ.get('S_GROUP',"https://t.me/+4nzja42ELQwzOWVl")
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
